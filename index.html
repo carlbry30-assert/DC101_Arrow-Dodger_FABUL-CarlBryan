@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arrow Dodger</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Arrow Dodger</h1>
+    <p>Hold ← → to dodge</p>
+  </header>
+
+  <main>
+    <div id="game">
+      <div id="player">
+        <div class="eye left"></div>
+        <div class="eye right"></div>
+        <div class="mouth"></div>
+      </div>
+    </div>
+
+    <p id="hud">
+      Score: <span id="score">0</span> |
+      Stage: <span id="stage">1</span>
+    </p>
+
+    <p id="game-over" hidden>💥 Game Over! Refresh to restart.</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

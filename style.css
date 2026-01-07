@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0a0a0a;
+  color: white;
+  text-align: center;
+}
+
+header {
+  margin-top: 10px;
+}
+
+#game {
+  position: relative;
+  width: 320px;
+  height: 420px;
+  margin: 20px auto;
+  background: radial-gradient(#222, #000);
+  overflow: hidden;
+  border: 3px solid white;
+}
+
+/* Player */
+#player {
+  position: absolute;
+  bottom: 10px;
+  left: 140px;
+  width: 40px;
+  height: 40px;
+  background: lime;
+  border-radius: 6px;
+}
+
+/* Face */
+.eye {
+  position: absolute;
+  top: 8px;
+  width: 6px;
+  height: 6px;
+  background: black;
+  border-radius: 50%;
+}
+
+.eye.left {
+  left: 8px;
+}
+
+.eye.right {
+  right: 8px;
+}
+
+.mouth {
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  width: 14px;
+  height: 4px;
+  background: black;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+/* Arrows */
+.arrow {
+  position: absolute;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  background: red;
+}
+
+/* Background particles */
+.particle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+}
+
+/* HUD */
+#hud {
+  font-size: 1.1rem;
+}
+
+#game-over {
+  color: red;
+  font-size: 1.3rem;
+}
+
+/* Screen shake */
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
